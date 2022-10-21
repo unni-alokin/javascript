@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="del" id="phone" onkeyup="usnumber()">
+    <input type="text">
+
+
+    <script>
+
+        function usnumber(){
+
+            // window.alert("varunnund")
+
+            let n=document.getElementById("phone").value
+            if(n.length==3|| n.length==7){
+                document.getElementById("phone").value=n+"-"
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>

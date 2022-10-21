@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main1">
+        <input type="checkbox" id="main" onchange="selectall()">select all
+        <br>
+
+        <input type="checkbox" id="sub1">select1
+        <br>
+        <input type="checkbox" id="sub2">select2
+    </div>
+
+
+    <script>
+        function selectall(){
+            let x=document.querySelector("#main")
+            let y=document.querySelector("#sub1")
+            let z=document.querySelector("#sub2")
+
+
+            if(x.checked==true){
+                y.checked=true
+                z.checked=true
+            }
+            else{
+                y.checked=false
+                z.checked=false
+            }
+        }
+    </script>
+</body>
+</html>
